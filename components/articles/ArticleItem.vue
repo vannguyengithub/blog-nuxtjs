@@ -23,7 +23,7 @@
               v-bind:desc="post.excerpt.rendered"
             />
             <ArticleItemInfor
-              v-bind="isShowAvatar"
+              v-bind:isShowAvatar="isShowAvatar"
               v-bind:userId="post.author"
               v-bind:nickname="post.author.nickname"
               v-bind:avatar="post.author_data.avatar"

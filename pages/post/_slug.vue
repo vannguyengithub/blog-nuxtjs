@@ -1,32 +1,34 @@
 <template>
-  <main class="post-detail">
-    <div class="spacing"></div>
+  <no-ssr>
+    <main class="post-detail">
+      <div class="spacing"></div>
 
-    <!-- Post Detail Head -->
-    <PostDetailHead v-bind:post="post"/>
-    <!-- End Post Detail Head -->
-
-    <div class="spacing"></div>
-
-    <!-- Post Detail Wrapper Content -->
-    <div class="post-detail__fluid">
-        <div class="tcl-container">
-          <div class="post-detail__wrapper">
-            <!-- Post Detail Content -->
-            <PostDetailContent v-bind:post="post"/>
-            <!-- End Post Detail Content -->
-
-            <!-- Post Detail Sidebar -->
-            <PostDetailSidebar v-bind:post="post"/>
-            <!-- End Post Detail Sidebar -->
-
-          </div>
-        </div>
-      </div>
-      <!-- End Post Detail Wrapper Content -->
+      <!-- Post Detail Head -->
+      <PostDetailHead v-bind:post="post"/>
+      <!-- End Post Detail Head -->
 
       <div class="spacing"></div>
-  </main>
+
+      <!-- Post Detail Wrapper Content -->
+      <div class="post-detail__fluid">
+          <div class="tcl-container">
+            <div class="post-detail__wrapper">
+              <!-- Post Detail Content -->
+              <PostDetailContent v-bind:post="post"/>
+              <!-- End Post Detail Content -->
+
+              <!-- Post Detail Sidebar -->
+              <PostDetailSidebar v-bind:post="post"/>
+              <!-- End Post Detail Sidebar -->
+
+            </div>
+          </div>
+        </div>
+        <!-- End Post Detail Wrapper Content -->
+
+        <div class="spacing"></div>
+    </main>
+  </no-ssr>
 </template>
 <script>
 import { mapState } from 'vuex';

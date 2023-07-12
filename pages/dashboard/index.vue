@@ -1,11 +1,11 @@
 <template>
   <div>
     <a-row v-bind:gutter="30">
-      <a-col v-bind:span="12">
+      <a-col v-bind:span="14">
         <a-form
           v-bind:form="form"
-          v-bind:wrapper-col="{ span: 16 }"
-          v-bind:label-col="{ span: 8 }"
+          v-bind:wrapper-col="{ span: 18 }"
+          v-bind:label-col="{ span: 6 }"
           v-on:submit="handleSubmit"
         >
           <!-- email -->
@@ -83,7 +83,7 @@
         </a-form>
       </a-col>
       <!--  -->
-      <a-col v-bind:span="12">
+      <a-col v-bind:span="10">
         <div>
           <p>Tải lên ảnh đại diện</p>
         </div>
@@ -233,5 +233,10 @@ export default {
 }
 </script>
 <style>
-
+@media (max-width: 768px) {
+  .admin-layout__content {
+    margin: 0;
+    padding: 8px;
+  }
+}
 </style>
