@@ -22,7 +22,7 @@
                 <li><a href="#">Bếp điện</a></li>
                 <li><a href="#">Bếp điện từ</a></li>
                 <li><a href="#">Cơ điện tử</a></li>
-                <li><a href="#">Anonymous in VN</a></li>
+                <li><a href="#">Điện gia dụng</a></li>
               </ul>
             </div>
 
