@@ -17,7 +17,36 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap' },
       { rel: 'stylesheet', href: 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' },
       { rel: 'stylesheet', href: 'assets/libs/bootstrap4/bootstrap-tcl.css' },
-    ]
+    ],
+
+    script: [
+      {
+        type: 'text/javascript',
+        hid: 'fb-customer-chat',
+        body: true,
+        innerHTML: `
+          var chatbox = document.getElementById('fb-customer-chat');
+          chatbox.setAttribute("page_id", 111048908616013);
+          chatbox.setAttribute("attribution", "biz_inbox");
+
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v17.0'
+            });
+          };
+
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));`
+      },
+    ],
+    __dangerouslyDisableSanitizersByTagID: { 'fb-customer-chat': ['innerHTML'] },
+
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -52,6 +81,6 @@ export default {
 
   },
   env: {
-    baseUrl: process.env.BASE_URL || 'http://learning-nuxtjs.vn/wp-api/wp-json'
+    baseUrl: process.env.BASE_URL || 'http://learning-nuxtjs.vn/wp-api/wp-json',
   }
 }

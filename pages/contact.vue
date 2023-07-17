@@ -3,20 +3,21 @@
     <div class="container">
 
       <div class="social">
-        <a href="https://twitter.com/steve_walson" target="_blank" class="twitter">
+        <a href="#" target="_blank" class="twitter">
           <svg viewBox="126.444 2.281 589 589" height="42">
             <title>Twitter</title>
             <path d="M609.773 179.634c-13.891 6.164-28.811 10.331-44.498 12.204 16.01-9.587 28.275-24.779 34.066-42.86a154.78 154.78 0 0 1-49.209 18.801c-14.125-15.056-34.267-24.456-56.551-24.456-42.773 0-77.462 34.675-77.462 77.473 0 6.064.683 11.98 1.996 17.66-64.389-3.236-121.474-34.079-159.684-80.945-6.672 11.446-10.491 24.754-10.491 38.953 0 26.875 13.679 50.587 34.464 64.477a77.122 77.122 0 0 1-35.097-9.686v.979c0 37.54 26.701 68.842 62.145 75.961-6.511 1.784-13.344 2.716-20.413 2.716-4.998 0-9.847-.473-14.584-1.364 9.859 30.769 38.471 53.166 72.363 53.799-26.515 20.785-59.925 33.175-96.212 33.175-6.25 0-12.427-.373-18.491-1.104 34.291 21.988 75.006 34.824 118.759 34.824 142.496 0 220.428-118.052 220.428-220.428 0-3.361-.074-6.697-.236-10.021a157.855 157.855 0 0 0 38.707-40.158z" />
           </svg>
         </a>
 
-<a href="https://www.facebook.com/steve.wals0n" target="_blank" class="facebook">
-  <svg viewBox="0 0 1700 1700" height="27">
-    <title>Facebook</title>
-    <path d="M1376 128q119 0 203.5 84.5t84.5 203.5v960q0 119-84.5 203.5t-203.5 84.5h-188v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-532q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960z"></path>
-  </svg>
-</a>
-        <a href="https://instagram.com/steve_walson" target="_blank" class="instagram">
+        <a href="https://www.facebook.com/thosuabep" target="_blank" class="facebook">
+          <svg viewBox="0 0 1700 1700" height="27">
+            <title>Facebook</title>
+            <path d="M1376 128q119 0 203.5 84.5t84.5 203.5v960q0 119-84.5 203.5t-203.5 84.5h-188v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-532q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960z"></path>
+          </svg>
+        </a>
+
+        <a href="#" target="_blank" class="instagram">
           <svg viewBox="0 0 24 24" height="32">
             <title>Instagram</title>
             <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z" />
@@ -89,8 +90,8 @@ body {
   transition: transform 0.4s ease-in-out;
 }
 
-.profile::before {
-  content: "Contact Me";
+/* .profile::before {
+  content: "";
   font-family: poppins;
   font-weight: bold;
   color: #fff;
@@ -101,7 +102,7 @@ body {
   transform: translateX(50%);
   border-radius: 9999px;
   background-color: #008da0;
-}
+} */
 
 .social {
   height: 100%;
@@ -166,6 +167,13 @@ body {
 @keyframes rotate {
   100% {
     transform: scale(1) rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 300px;
+    width: 300px;
   }
 }
 
