@@ -81,6 +81,6 @@ export default {
 
   },
   env: {
-    baseUrl: process.env.BASE_URL || 'http://learning-nuxtjs.vn/wp-api/wp-json',
+    baseUrl: process.env.BASE_URL || 'https://api.thosuabep.com/wp-json',
   }
 }
