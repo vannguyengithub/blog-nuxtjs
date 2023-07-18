@@ -10,7 +10,7 @@
                 <img src="/assets/images/logo.png" alt="NuxtBlog Logo" style="width: 80px; height: 80px; object-fit: contain;">
               </div>
               <p>© 2023, All Rights Reserved.</p>
-              <p>vannguyen <a href="https://www.facebook.com/NguyenVanNguyen2533/" target="_blank">nguyenvn</a></p>
+              <p>Developer by © <a href="https://www.facebook.com/NguyenVanNguyen2533/" target="_blank">nguyenvn</a></p>
             </div>
 
             <!-- Footer Column -->

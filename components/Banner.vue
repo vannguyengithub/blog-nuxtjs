@@ -10,7 +10,7 @@
         </div>
         <div class="swiper-slide">
           <nuxt-link to="#">
-            <img src="/assets/images/banner1.jpg" alt="slider">
+            <img src="/assets/images/banner2.png" alt="slider">
           </nuxt-link>
         </div>
 
