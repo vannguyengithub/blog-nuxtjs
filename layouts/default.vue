@@ -1,19 +1,17 @@
 <template>
-
-
     <div class="wrapper-content">
       <TheHeader/>
       <Nuxt/>
       <TheFooter/>
       <div id="fb-root"></div>
       <div id="fb-customer-chat" class="fb-customerchat"></div>
-      <ScrollToTop/>
+      <ScrollTop/>
     </div>
 </template>
 <script>
-import ScrollToTop from '../components/scrollToTop.vue';
+import ScrollTop from '../components/ScrollTop.vue';
 export default {
-    components: { ScrollToTop }
+    components: { ScrollTop }
 }
 </script>
 <style>
