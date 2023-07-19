@@ -124,7 +124,7 @@ export default {
 </script>
 <style>
 .header-nav-pc {
-  display: block;
+  display: flex;
 }
 @media (max-width: 600px) {
   .header-nav-pc {
