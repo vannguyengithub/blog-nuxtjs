@@ -51,13 +51,13 @@ export default {
 }
 
 .swiper-button-next {
-  width: 40px;
-  height: 40px;
-  background: #fff;
-  border: 1px solid rgba(16,16,16,.1);
+  width: 40px !important;
+  height: 40px !important;
+  background: #fff !important;
+  border: 1px solid rgba(16,16,16,.1) !important;
   box-sizing: border-box;
-  box-shadow: 0 0 4px rgba(16,16,16,.1);
-  border-radius: 999px;
+  box-shadow: 0 0 4px rgba(16,16,16,.1) !important;
+  border-radius: 999px !important;
 }
 .swiper-button-next::after {
   text-transform: none!important;
@@ -65,25 +65,25 @@ export default {
   text-transform: none;
   font-variant: normal;
   line-height: 1;
-  font-size: 16px;
-  color: #000;
+  font-size: 16px !important;
+  color: #000 !important;
 }
 .swiper-button-prev {
-  width: 40px;
-  height: 40px;
-  background: #fff;
-  border: 1px solid rgba(16,16,16,.1);
+  width: 40px !important;
+  height: 40px !important;
+  background: #fff !important;
+  border: 1px solid rgba(16,16,16,.1) !important;
   box-sizing: border-box;
-  box-shadow: 0 0 4px rgba(16,16,16,.1);
-  border-radius: 999px;
+  box-shadow: 0 0 4px rgba(16,16,16,.1) !important;
+  border-radius: 999px !important;
 }
 .swiper-button-prev::after {
   text-transform: none!important;
-  letter-spacing: 0;
-  text-transform: none;
+  letter-spacing: 0 ;
+  text-transform: none ;
   font-variant: normal;
   line-height: 1;
-  font-size: 16px;
-  color: #000;
+  font-size: 16px !important;
+  color: #000 !important;
 }
 </style>
