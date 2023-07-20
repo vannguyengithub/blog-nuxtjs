@@ -1,7 +1,8 @@
 <template>
     <div class="article-item__thumbnail">
         <nuxt-link v-bind:to="slug">
-            <img v-bind:src="thumbnail" v-bind:alt="title">
+            <img v-if="typeof thumbnail === 'string'" v-bind:src="thumbnail" v-bind:alt="title">
+            <img v-else src="/assets/images/avatar1.jpg" v-bind:alt="title">
         </nuxt-link>
     </div>
 </template>
@@ -13,7 +14,7 @@ export default {
       default: ''
     },
     thumbnail: {
-      type: String,
+      type: [String, Boolean],
       default: ''
     },
     title: {

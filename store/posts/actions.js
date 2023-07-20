@@ -29,9 +29,10 @@ export default {
         params: {
           page: 1,
           per_page: 3,
-          orderby: 'post_views'
+          // orderby: 'post_views'
         }
       });
+      // console.log("response", response.data);
       if(response.status === 200) {
         commit('setPopularList', response.data);
       }

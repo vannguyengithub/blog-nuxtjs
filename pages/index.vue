@@ -1,6 +1,7 @@
 <template>
   <main>
     <Banner />
+
     <NewsLatest/>
 
     <NewsPopular />

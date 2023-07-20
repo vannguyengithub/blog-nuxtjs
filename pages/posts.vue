@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import Banner from '../components/Banner.vue';
 export default {
     layout(context) {
       let userAgent = '';
