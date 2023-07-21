@@ -1,10 +1,7 @@
 <template>
   <main>
     <ArticlesList />
-
     <NewsPopular />
-
-
   </main>
 </template>
 

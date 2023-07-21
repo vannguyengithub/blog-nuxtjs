@@ -61,7 +61,18 @@
 
 <script>
 export default {
-
+  layout(context) {
+    let userAgent = '';
+    if (context.req) {
+      userAgent = context.req.headers['user-agent']
+    } else {
+      userAgent = navigator.userAgent
+    }
+    if (/mobile/i.test(userAgent)) {
+      return 'mobile';
+    }
+    return 'default';
+  },
 }
 </script>
 
