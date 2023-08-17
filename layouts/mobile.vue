@@ -54,10 +54,11 @@ export default {
   .layout-mobile .header-nav {
     display: block;
     position: fixed;
-    top: 81px;
+    top: 114px;
     background: #fff;
     left: 0;
     right: 0;
+    padding: 20px 0;
   }
   .layout-mobile .header-nav .header-nav__lists {
     display: block;
