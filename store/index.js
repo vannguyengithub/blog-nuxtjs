@@ -80,8 +80,8 @@ export const actions = {
     const token = getTokenFromCookie(req);
 
     // là nơi dispatch ra những dữ liệu dùng chung
+    dispatch('posts/actFetchCategories'),
     await Promise.all([
-      dispatch('posts/actFetchCategories'),
       dispatch('actFetchMainMenus'),
       dispatch('auth/actFetchCurrentUser', token)
     ])
