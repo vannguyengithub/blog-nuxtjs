@@ -87,15 +87,32 @@ export const actions = {
     ])
   },
 
-  async actFetchMainMenus({ commit }) {
-    try {
-      const response = await this.$wpApi.get('/menus/v1/menus/main-menu');
+  // async actFetchMainMenus({ commit }) {
+  //   try {
+  //     const response = await this.$wpApi.get('/menus/v1/menus/main-menu');
 
-      if(response.status === 200) {
-        commit('setAppMainMenus', response.data);
-      }
-    } catch(e) {
-      console.error("actFetchMainMenus", e.response.data.message);
-    }
+  //     if(response.status === 200) {
+  //       commit('setAppMainMenus', response.data);
+  //     }
+  //   } catch(e) {
+  //     console.error("actFetchMainMenus", e.response.data.message);
+  //   }
+  // }
+  actFetchMainMenus({ commit }) {
+    return new Promise((resolve, reject) => {
+      this.$wpApi.get('/menus/v1/menus/main-menu')
+        .then((response) => {
+          if (response.status === 200) {
+            commit('setAppMainMenus', response.data);
+            resolve(response);
+          } else {
+            reject(response.data.message);
+          }
+        })
+        .catch((error) => {
+          console.error("actFetchMainMenus", error);
+          reject(error.response.data.message);
+        });
+    });
   }
 }

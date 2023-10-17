@@ -41,21 +41,45 @@ export default {
     }
   },
 
-  async actFetchCategories({ commit }) {
-    try {
-      const response = await this.$api.get('/categories', {
+  // async actFetchCategories({ commit }) {
+  //   try {
+  //     const response = await this.$api.get('/categories', {
+  //       params: {
+  //         page: 1,
+  //         per_page: 100,
+  //         // pargam
+  //       }
+  //     });
+  //     if(response.status === 200) {
+  //       commit('setCategoriesList', response.data);
+  //     }
+  //   } catch(e) {
+  //     console.error("actFetchCategories", e.response.data.message);
+  //   }
+  // },
+
+  actFetchCategories({ commit }) {
+    return new Promise((resolve, reject) => {
+      this.$api.get('/categories', {
         params: {
           page: 1,
           per_page: 100,
           // pargam
         }
+      })
+      .then((response) => {
+        if (response.status === 200) {
+          commit('setCategoriesList', response.data);
+          resolve(response);
+        } else {
+          reject(response.data.message);
+        }
+      })
+      .catch((error) => {
+        console.error("actFetchCategories", error.response.data.message);
+        reject(error.response.data.message);
       });
-      if(response.status === 200) {
-        commit('setCategoriesList', response.data);
-      }
-    } catch(e) {
-      console.error("actFetchCategories", e.response.data.message);
-    }
+    });
   },
 
   async actFetchArticlesList({ commit }, {curPage = 1, pageSize = 4, ...restParams } = {} ) {
